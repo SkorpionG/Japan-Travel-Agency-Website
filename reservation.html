@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>預約行程 | 日本旅遊推薦</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+            integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="./styles/reservation.css">
+        <link rel="icon" href="./images/網站Logo.svg">
+    </head>
+
+    <body>
+        <header>
+            <a href="index.html" class="logo">
+                <img src="./images/網站Logo.svg" alt="日本旅遊網Logo" />
+                <h1><span class="year"></span>日本旅遊推薦</h1>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="index.html"><i class="fa-solid fa-plane"></i> 日本旅遊</a></li>
+                    <li><a href="member-login.html"><i class="fa-solid fa-right-to-bracket"></i> 會員登入</a></li>
+                    <li><a href="reservation.html" class="active"><i class="fa-solid fa-book"></i> 預約行程</a></li>
+                    <li><a href="contact.html"><i class="fa-regular fa-address-book"></i> 聯絡我們</a></li>
+                    <li><a href="about.html"><i class="fa-solid fa-circle-info"></i> 關於我們</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section class="reservation-section">
+                <form class="form-container">
+                    <h3 class="form-title">預約行程</h3>
+                    <p class="form-instructions">請填寫以下資訊以預約您的日本旅遊行程。</p>
+                    <div class="form-group">
+                        <label for="name" class="form-label">姓名</label>
+                        <input type="text" id="name" name="name" required class="form-input">
+                    </div>
+                    <div class="form-group">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" id="email" name="email" required class="form-input">
+                    </div>
+                    <div class="form-group">
+                        <label for="date" class="form-label">出發日期</label>
+                        <input type="date" id="date" name="date" required class="form-input">
+                    </div>
+                    <div class="form-group">
+                        <label for="people" class="form-label">人數</label>
+                        <input type="number" id="people" name="people" required class="form-input" min="1" value="1">
+                    </div>
+                    <div class="form-group">
+                        <label for="days" class="form-label">總天數</label>
+                        <input type="number" id="days" name="days" required class="form-input" min="1">
+                    </div>
+                    <div class="form-group">
+                        <label for="budget" class="form-label">預算 (每人 TWD)</label>
+                        <input type="number" id="budget" name="budget" class="form-input" min="0" step="1000"
+                            placeholder="例如 30000">
+                    </div>
+                    <div class="form-group">
+                        <label for="destinations" class="form-label">旅遊目的地（可多選）</label>
+                        <select id="destinations" name="destinations" multiple class="form-input">
+                            <option value="tokyo">東京</option>
+                            <option value="kyoto">京都</option>
+                            <option value="osaka">大阪</option>
+                            <option value="hokkaido">北海道</option>
+                            <option value="okinawa">沖繩</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="preferences" class="form-label">旅遊偏好</label>
+                        <input type="text" id="preferences" name="preferences" placeholder="如美食、溫泉、購物等"
+                            class="form-input">
+                    </div>
+                    <div class="form-group">
+                        <label for="notes" class="form-label">備註</label>
+                        <textarea id="notes" name="notes" rows="4" class="form-textarea"></textarea>
+                    </div>
+                    <button type="submit" class="form-submit">送出預約</button>
+                </form>
+            </section>
+        </main>
+        <footer>
+            <section class="logo">
+                <img src="./images/網站Logo.svg" alt="日本旅遊網Logo" />
+                <h3><span class="year"></span>日本旅遊推薦</h3>
+            </section>
+            <section class="links">
+                <a href="#"><img title="Facebook 粉絲頁" src=" ./Icons/facebook.svg" alt="facebook logo" /></a>
+                <a href="#"><img title="Instagram 頁面" src="./Icons/instagram.svg" alt="instagram logo" /></a>
+                <a href="#"><img title="Twitter (X) 頁面" src=" ./Icons/twitter.svg" alt="twitter logo" /></a>
+                <a href="#"><img title="YouTube 頻道" src=" ./Icons/youtube.svg" alt="youtube logo" /></a>
+            </section>
+        </footer>
+        <script src="./script.js" defer></script>
+    </body>
+
+</html>

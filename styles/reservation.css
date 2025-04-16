@@ -139,115 +139,124 @@ footer section.links a img {
     gap: 0.5rem;
   }
 }
-main {
-  background-color: transparent !important;
-}
-main section.background-image {
-  min-height: 70vh;
-  background-image: url("../images/大阪街頭.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  transition: all 0.75s ease;
-}
-main section.background-image div.filter {
-  background-color: rgba(0, 0, 0, 0.5);
+.form-container {
+  padding: 2.5rem;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
   width: 100%;
-  min-height: 70vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-main section.background-image h3 {
-  color: white;
-  font-size: 2.5rem;
-  text-align: center;
-}
-main section.info-circles {
-  background-color: white;
-  padding: 3rem 1.5rem;
-}
-main section.info-circles h3 {
-  text-align: center;
-  font-size: 2rem;
-}
-main section.info-circles div.circles {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-main section.info-circles div.circles div.circle {
-  padding: 1rem;
-  flex: 0 1 250px;
+  max-width: 600px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 0.5rem;
+  gap: 1rem;
 }
-main section.info-circles div.circles div.circle img {
-  width: 80%;
-  border-radius: 50%;
-  transition: all 0.125s ease-in;
-  padding: 0.2rem;
-}
-main section.info-circles div.circles div.circle img:hover {
-  border: 3px solid rgba(152, 57, 255, 0.5);
-}
-main section.empty-container {
-  min-height: 60vh;
-  background-color: rgba(0, 0, 0, 0.7);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 0 3rem;
-  gap: 1.5rem;
-}
-main section.empty-container h3#reservation-title {
-  color: white;
+
+.form-title {
+  text-align: center;
   font-size: 2rem;
-  text-align: center;
-}
-main section.empty-container p#reservation-description {
-  color: white;
-  font-size: 1.1rem;
-  text-align: center;
-  max-width: 800px;
-}
-main section.empty-container button#reservation-cta {
-  padding: 0.75rem 1.25rem;
-  font-size: 1rem;
-  font-weight: bold;
   color: rgba(152, 57, 255, 0.5);
-  background-color: white;
-  border: none;
-  border-radius: 25px;
-  cursor: pointer;
-  transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin-bottom: 1.5rem;
+  letter-spacing: 1px;
 }
-main section.empty-container button#reservation-cta:hover {
-  background-color: #e6e6e6;
-  color: rgba(125, 6, 255, 0.5);
+
+.form-instructions {
+  text-align: center;
+  color: #8a4be5;
+  background-color: rgba(152, 57, 255, 0.09);
+  border-left: 4px solid #9839ff;
+  padding: 0.75rem 1rem;
+  margin-bottom: 1.5rem;
+  border-radius: 6px;
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  margin-bottom: 1rem;
+}
+
+.form-label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  color: #6d36b8;
+  font-weight: 600;
+}
+
+.form-input,
+.form-textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  transition: border 0.2s, box-shadow 0.3s ease;
+}
+.form-input:focus,
+.form-textarea:focus {
+  border: 1.5px solid rgba(152, 57, 255, 0.5);
+  outline: none;
+  box-shadow: 0 0 5px rgba(152, 57, 255, 0.5);
+}
+
+.form-textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.form-submit {
+  display: block;
+  width: 100%;
+  padding: 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  background: linear-gradient(90deg, #9839ff 60%, #a277ff 100%);
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s ease;
+  box-shadow: 0 2px 6px rgba(152, 57, 255, 0.5);
+  margin-top: 0.5rem;
+}
+.form-submit:hover {
+  background: linear-gradient(90deg, #a277ff 0%, #9839ff 100%);
   transform: translateY(-2px);
 }
-main section.empty-container button#reservation-cta:active {
+.form-submit:active {
   transform: translateY(0);
 }
-main section.google-map {
-  background-color: white;
-  padding: 3rem 1.5rem;
-  text-align: center;
+
+main section.reservation-section {
+  padding: 4rem 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
 }
-main section.google-map h3 {
-  font-size: 2.5rem;
+main section.reservation-section select[multiple] {
+  height: auto;
+  min-height: 2.5rem;
+  padding: 0.8rem;
 }
-main section.google-map P {
-  font-size: 1.25rem;
-  margin: 1rem;
+main section.reservation-section input[type=number] {
+  -webkit-appearance: textfield;
+          appearance: textfield;
+  -moz-appearance: textfield;
 }
-main section.google-map iframe {
-  width: 100%;
-  height: 40vh;
-}/*# sourceMappingURL=style.css.map */
+main section.reservation-section input[type=number]::-webkit-outer-spin-button, main section.reservation-section input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+@media (max-width: 700px) {
+  main section.contact-section {
+    padding: 2rem 1rem;
+  }
+  main section.contact-section .form-container {
+    padding: 1.5rem;
+  }
+}/*# sourceMappingURL=reservation.css.map */

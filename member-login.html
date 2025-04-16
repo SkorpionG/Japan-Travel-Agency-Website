@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>會員登入 | 日本旅遊推薦</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+            integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="./styles/member-login.css">
+        <link rel="icon" href="./images/網站Logo.svg">
+    </head>
+    <body>
+        <header>
+            <a href="index.html" class="logo">
+                <img src="./images/網站Logo.svg" alt="日本旅遊網Logo" />
+                <h1><span class="year"></span>日本旅遊推薦</h1>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="index.html"><i class="fa-solid fa-plane"></i> 日本旅遊</a></li>
+                    <li><a href="member-login.html"><i class="fa-solid fa-right-to-bracket"></i> 會員登入</a></li>
+                    <li><a href="reservation.html"><i class="fa-solid fa-book"></i> 預約行程</a></li>
+                    <li><a href="contact.html"><i class="fa-regular fa-address-book"></i> 聯絡我們</a></li>
+                    <li><a href="about.html"><i class="fa-solid fa-circle-info"></i> 關於我們</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section class="form-container" id="login-section">
+                <h2 class="form-title">會員登入</h2>
+                <form id="login-form" autocomplete="on">
+                    <div class="form-group">
+                        <label class="form-label" for="login-email">電子郵件</label>
+                        <input class="form-input" id="login-email" name="email" type="email" required
+                            placeholder="請輸入電子郵件">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="login-password">密碼</label>
+                        <input class="form-input" id="login-password" name="password" type="password" required
+                            placeholder="請輸入密碼">
+                    </div>
+                    <button class="form-submit" type="submit">登入</button>
+                </form>
+                <p style="text-align:center; margin-top:1rem;">還不是會員？ <span class="toggle-link"
+                        id="show-register">註冊新帳號</span></p>
+            </section>
+            <section class="form-container hidden" id="register-section">
+                <h2 class="form-title">會員註冊</h2>
+                <form id="register-form" autocomplete="on">
+                    <div class="form-group">
+                        <label class="form-label" for="register-name">姓名</label>
+                        <input class="form-input" id="register-name" name="name" type="text" required
+                            placeholder="請輸入姓名">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="register-email">電子郵件</label>
+                        <input class="form-input" id="register-email" name="email" type="email" required
+                            placeholder="請輸入電子郵件">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="register-password">密碼</label>
+                        <input class="form-input" id="register-password" name="password" type="password" required
+                            placeholder="請輸入密碼">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="register-confirm">確認密碼</label>
+                        <input class="form-input" id="register-confirm" name="confirm" type="password" required
+                            placeholder="請再次輸入密碼">
+                    </div>
+                    <button class="form-submit" type="submit">註冊</button>
+                </form>
+                <p style="text-align:center; margin-top:1rem;">已經有帳號？ <span class="toggle-link"
+                        id="show-login">返回登入</span></p>
+            </section>
+        </main>
+        <footer>
+            <section class="logo">
+                <img src="./images/網站Logo.svg" alt="日本旅遊網Logo" />
+                <h3><span class="year"></span>日本旅遊推薦</h3>
+            </section>
+        </footer>
+        <script>
+            // Toggle registration/login
+            document.getElementById('show-register').onclick = function () {
+                document.getElementById('login-section').classList.add('hidden');
+                document.getElementById('register-section').classList.remove('hidden');
+            };
+            document.getElementById('show-login').onclick = function () {
+                document.getElementById('register-section').classList.add('hidden');
+                document.getElementById('login-section').classList.remove('hidden');
+            };
+        </script>
+        <script src="./script.js" defer></script>
+    </body>
+
+</html>

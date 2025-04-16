@@ -1,0 +1,183 @@
+$themeColor: rgba(152, 57, 255, 0.5);
+$logoSize: 6rem;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scrollbar-width: auto;
+  scrollbar-color: $themeColor white;
+  scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+
+body {
+  background-image: url("../images/富士山2.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 10px 6px -6px #777;
+
+  flex-wrap: wrap;
+  a.logo {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    text-decoration: none;
+
+    h1 {
+      font-size: 2.5rem;
+      color: black;
+    }
+
+    img {
+      width: $logoSize;
+      height: $logoSize;
+    }
+  }
+
+  nav {
+    flex: 5 1 500px;
+
+    ul {
+      display: flex;
+      list-style-type: none;
+      justify-content: space-around;
+      align-items: center;
+
+      li {
+        a {
+          color: black;
+          text-decoration: none;
+          font-size: 1.35rem;
+          transition: all 0.2s ease;
+          padding-bottom: 0.3rem;
+          &:hover {
+            color: $themeColor;
+            border-bottom: 3px solid $themeColor;
+          }
+        }
+      }
+    }
+  }
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  align-items: center;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.3);
+
+  section.logo {
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    img {
+      width: $logoSize;
+      height: $logoSize;
+    }
+
+    h3 {
+      font-size: 2.5rem;
+    }
+  }
+
+  section.links {
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    a {
+      margin: 1rem;
+      img {
+        width: 4rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1120px) {
+  header {
+    flex-direction: column;
+
+    a.logo {
+      flex: 1;
+    }
+
+    nav {
+      flex: 1;
+      width: 100%;
+      margin-bottom: 1rem;
+    }
+  }
+}
+
+@media screen and (max-width: 680px) {
+  header {
+    position: static;
+    a.logo {
+      flex-direction: column;
+      border-bottom: 1px solid black;
+      margin-bottom: 0.5rem;
+
+      h1 {
+        font-size: 2rem;
+        color: black;
+      }
+    }
+    nav {
+      ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+      }
+    }
+  }
+}
+
+// ::-webkit-scrollbar {
+//   width: 10px;
+// }
+// /* Track */
+// ::-webkit-scrollbar-track {
+//   background: #f1f1f1;
+// }
+// /* Handle */
+
+// ::-webkit-scrollbar-thumb {
+//   background: $themeColor;
+// }
+// /* Handle on hover */
+// ::-webkit-scrollbar-thumb:hover {
+//   background-color: rgba(122, 27, 225, 0.5);
+// }
+
+// ::-webkit-scrollbar-thumb:active {
+//   background-color: $themeColor;
+// }

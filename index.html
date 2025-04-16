@@ -14,18 +14,17 @@
 
     <body>
         <header>
-            <section class="logo">
-                <a href="#">
-                    <img src="./images/網站Logo.svg" alt="日本旅遊網Logo" />
-                </a>
+            <a href="index.html" class="logo">
+                <img src="./images/網站Logo.svg" alt="日本旅遊網Logo" />
                 <h1><span class="year"></span>日本旅遊推薦</h1>
-            </section>
+            </a>
             <nav>
                 <ul>
-                    <li><a href="#"><i class="fa-solid fa-plane"></i> 日本旅遊</a></li>
-                    <li><a href="#"><i class="fa-solid fa-right-to-bracket"></i> 會員登入</a></li>
-                    <li><a href="#"><i class="fa-solid fa-book"></i> 預約行程</a></li>
-                    <li><a href="#contact"><i class="fa-regular fa-address-book"></i> 聯絡我們</a></li>
+                    <li><a href="index.html"><i class="fa-solid fa-plane"></i> 日本旅遊</a></li>
+                    <li><a href="member-login.html"><i class="fa-solid fa-right-to-bracket"></i> 會員登入</a></li>
+                    <li><a href="reservation.html"><i class="fa-solid fa-book"></i> 預約行程</a></li>
+                    <li><a href="contact.html"><i class="fa-regular fa-address-book"></i> 聯絡我們</a></li>
+                    <li><a href="about.html"><i class="fa-solid fa-circle-info"></i> 關於我們</a></li>
                 </ul>
             </nav>
         </header>
@@ -58,7 +57,9 @@
             </section>
 
             <section class="empty-container">
-                <h3>今天就開始規劃行程，找到最適合的方案。</h3>
+                <h3 id="reservation-title">今天就開始規劃行程，找到最適合的方案。</h3>
+                <p id="reservation-description">無論是家庭旅遊、蜜月旅行或是獨自探險，我們都能為您提供最完美的行程安排。我們的專業團隊將根據您的需求，量身打造獨特的旅遊體驗。</p>
+                <a href="reservation.html"><button id="reservation-cta" type="button">立即預約</button></a>
             </section>
 
             <section class="google-map">
@@ -81,13 +82,17 @@
                 <h3><span class="year"></span>日本旅遊推薦</h3>
             </section>
             <section class="links" id="contact">
-                <a href="#"><img title="Facebook 粉絲頁" src=" ./Icons/facebook.svg" alt="facebook logo" /></a>
-                <a href="#"><img title="Instagram 頁面" src="./Icons/instagram.svg" alt="instagram logo" /></a>
-                <a href="#"><img title="Twitter (X) 頁面" src=" ./Icons/twitter.svg" alt="twitter logo" /></a>
-                <a href="#"><img title="YouTube 頻道" src=" ./Icons/youtube.svg" alt="youtube logo" /></a>
+                <a href="https://www.facebook.com/"><img title="Facebook 粉絲頁" src=" ./Icons/facebook.svg"
+                        alt="facebook logo" /></a>
+                <a href="https://www.instagram.com/"><img title="Instagram 頁面" src="./Icons/instagram.svg"
+                        alt="instagram logo" /></a>
+                <a href="https://x.com/"><img title="Twitter (X) 頁面" src=" ./Icons/twitter.svg"
+                        alt="twitter logo" /></a>
+                <a href="https://www.youtube.com/"><img title="YouTube 頻道" src=" ./Icons/youtube.svg"
+                        alt="youtube logo" /></a>
             </section>
         </footer>
-        <script src="./script.js"></script>
+        <script src="./script.js" defer></script>
     </body>
 
 </html>

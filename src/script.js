@@ -1,3 +1,4 @@
+const basePath = window.location.pathname.includes('/pages/') ? '../../public/assets/' : './public/assets/';
 document.addEventListener("DOMContentLoaded", () => {
   const year = new Date().getFullYear();
   const yearBanned = document.querySelectorAll(".year");
@@ -9,7 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
   function rotateImage() {
     if (!backgroundImage) return;
     imageIndex >= images.length - 1 ? (imageIndex = 0) : imageIndex++;
-    backgroundImage.style.backgroundImage = `url(./images/${images[imageIndex]}.jpg)`;
+    backgroundImage.style.backgroundImage = `url(${basePath}${images[imageIndex]}.jpg)`;
   }
   setInterval(rotateImage, 5000);
 });

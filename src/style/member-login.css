@@ -21,7 +21,7 @@ h6 {
 }
 
 body {
-  background-image: url("../images/富士山2.jpg");
+  background-image: url("../../public/assets/富士山2.jpg");
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
@@ -230,19 +230,36 @@ footer section.links a img {
   transform: translateY(0);
 }
 
-main section.contact-section {
-  padding: 4rem 1rem;
+.toggle-link {
+  color: #9839ff;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.toggle-link:hover {
+  color: #6d36b8;
+}
+
+.hidden {
+  display: none;
+}
+
+main {
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+  padding: 4rem 1rem;
 }
 
-@media (max-width: 700px) {
-  main section.contact-section {
-    padding: 2rem 1rem;
-  }
-  main section.contact-section .form-container {
-    padding: 1.5rem;
-  }
-}/*# sourceMappingURL=contact.css.map */
+button.form-submit {
+  margin-top: 2.5rem;
+}
+
+footer {
+  padding: 2rem 0;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+footer section.logo {
+  margin-top: 0;
+}/*# sourceMappingURL=member-login.css.map */

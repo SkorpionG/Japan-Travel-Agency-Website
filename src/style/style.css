@@ -21,7 +21,7 @@ h6 {
 }
 
 body {
-  background-image: url("../images/富士山2.jpg");
+  background-image: url("../../public/assets/富士山2.jpg");
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
@@ -144,7 +144,7 @@ main {
 }
 main section.background-image {
   min-height: 70vh;
-  background-image: url("../images/大阪街頭.jpg");
+  background-image: url("../../public/assets/大阪街頭.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

@@ -8,23 +8,23 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
             integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
             crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="stylesheet" href="./styles/style.css">
-        <link rel="icon" href="./images/網站Logo.svg">
+        <link rel="stylesheet" href="./src/style/style.css">
+        <link rel="icon" href="./public/assets/網站Logo.svg">
     </head>
 
     <body>
         <header>
             <a href="index.html" class="logo">
-                <img src="./images/網站Logo.svg" alt="日本旅遊網Logo" />
+                <img src="./public/assets/網站Logo.svg" alt="日本旅遊網Logo" />
                 <h1><span class="year"></span>日本旅遊推薦</h1>
             </a>
             <nav>
                 <ul>
                     <li><a href="index.html"><i class="fa-solid fa-plane"></i> 日本旅遊</a></li>
-                    <li><a href="member-login.html"><i class="fa-solid fa-right-to-bracket"></i> 會員登入</a></li>
-                    <li><a href="reservation.html"><i class="fa-solid fa-book"></i> 預約行程</a></li>
-                    <li><a href="contact.html"><i class="fa-regular fa-address-book"></i> 聯絡我們</a></li>
-                    <li><a href="about.html"><i class="fa-solid fa-circle-info"></i> 關於我們</a></li>
+                    <li><a href="./src/pages/member-login.html"><i class="fa-solid fa-right-to-bracket"></i> 會員登入</a></li>
+                    <li><a href="./src/pages/reservation.html"><i class="fa-solid fa-book"></i> 預約行程</a></li>
+                    <li><a href="./src/pages/contact.html"><i class="fa-regular fa-address-book"></i> 聯絡我們</a></li>
+                    <li><a href="./src/pages/about.html"><i class="fa-solid fa-circle-info"></i> 關於我們</a></li>
                 </ul>
             </nav>
         </header>
@@ -38,19 +38,19 @@
                 <h3>遊玩主題</h3>
                 <div class="circles">
                     <div class="circle">
-                        <img title="北海道雪景" src="./images/北海道雪景.jpg" alt="北海道雪景" />
+                        <img title="北海道雪景" src="./public/assets/北海道雪景.jpg" alt="北海道雪景" />
                         <p>北海道雪景，美不勝收</p>
                     </div>
                     <div class="circle">
-                        <img title="日本道地壽司" src="./images/日本壽司.jpg" alt="日本壽司" />
+                        <img title="日本道地壽司" src="./public/assets/日本壽司.jpg" alt="日本壽司" />
                         <p>日本道地壽司與美食</p>
                     </div>
                     <div class="circle">
-                        <img title="富士山風景" src="./images/富士山.jpg" aLt="富士山" />
+                        <img title="富士山風景" src="./public/assets/富士山.jpg" aLt="富士山" />
                         <p>富士山風景與溫泉</p>
                     </div>
                     <div class="circle">
-                        <img title="京都清水寺" src="./images/清水寺.jpg" alt="清水寺" />
+                        <img title="京都清水寺" src="./public/assets/清水寺.jpg" alt="清水寺" />
                         <p>京都清水寺，千年古都</p>
                     </div>
                 </div>
@@ -59,7 +59,7 @@
             <section class="empty-container">
                 <h3 id="reservation-title">今天就開始規劃行程，找到最適合的方案。</h3>
                 <p id="reservation-description">無論是家庭旅遊、蜜月旅行或是獨自探險，我們都能為您提供最完美的行程安排。我們的專業團隊將根據您的需求，量身打造獨特的旅遊體驗。</p>
-                <a href="reservation.html"><button id="reservation-cta" type="button">立即預約</button></a>
+                <a href="./src/pages/reservation.html"><button id="reservation-cta" type="button">立即預約</button></a>
             </section>
 
             <section class="google-map">
@@ -78,21 +78,21 @@
         </main>
         <footer>
             <section class="logo">
-                <img src="./images/網站Logo.svg" alt="日本旅遊網Logo" />
+                <img src="./public/assets/網站Logo.svg" alt="日本旅遊網Logo" />
                 <h3><span class="year"></span>日本旅遊推薦</h3>
             </section>
             <section class="links" id="contact">
-                <a href="https://www.facebook.com/"><img title="Facebook 粉絲頁" src=" ./Icons/facebook.svg"
+                <a href="https://www.facebook.com/"><img title="Facebook 粉絲頁" src="./public/icons/facebook.svg"
                         alt="facebook logo" /></a>
-                <a href="https://www.instagram.com/"><img title="Instagram 頁面" src="./Icons/instagram.svg"
+                <a href="https://www.instagram.com/"><img title="Instagram 頁面" src="./public/icons/instagram.svg"
                         alt="instagram logo" /></a>
-                <a href="https://x.com/"><img title="Twitter (X) 頁面" src=" ./Icons/twitter.svg"
+                <a href="https://x.com/"><img title="Twitter (X) 頁面" src="./public/icons/twitter.svg"
                         alt="twitter logo" /></a>
-                <a href="https://www.youtube.com/"><img title="YouTube 頻道" src=" ./Icons/youtube.svg"
+                <a href="https://www.youtube.com/"><img title="YouTube 頻道" src="./public/icons/youtube.svg"
                         alt="youtube logo" /></a>
             </section>
         </footer>
-        <script src="./script.js" defer></script>
+        <script src="./src/script.js" defer></script>
     </body>
 
 </html>

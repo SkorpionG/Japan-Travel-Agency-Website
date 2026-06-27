@@ -21,7 +21,7 @@ h6 {
 }
 
 body {
-  background-image: url("../images/富士山2.jpg");
+  background-image: url("../../public/assets/富士山2.jpg");
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
@@ -230,36 +230,33 @@ footer section.links a img {
   transform: translateY(0);
 }
 
-.toggle-link {
-  color: #9839ff;
-  cursor: pointer;
-  text-decoration: underline;
-}
-
-.toggle-link:hover {
-  color: #6d36b8;
-}
-
-.hidden {
-  display: none;
-}
-
-main {
+main section.reservation-section {
+  padding: 4rem 1rem;
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  padding: 4rem 1rem;
+}
+main section.reservation-section select[multiple] {
+  height: auto;
+  min-height: 2.5rem;
+  padding: 0.8rem;
+}
+main section.reservation-section input[type=number] {
+  -webkit-appearance: textfield;
+          appearance: textfield;
+  -moz-appearance: textfield;
+}
+main section.reservation-section input[type=number]::-webkit-outer-spin-button, main section.reservation-section input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
-button.form-submit {
-  margin-top: 2.5rem;
-}
-
-footer {
-  padding: 2rem 0;
-  background-color: rgba(0, 0, 0, 0.6);
-}
-footer section.logo {
-  margin-top: 0;
-}/*# sourceMappingURL=member-login.css.map */
+@media (max-width: 700px) {
+  main section.contact-section {
+    padding: 2rem 1rem;
+  }
+  main section.contact-section .form-container {
+    padding: 1.5rem;
+  }
+}/*# sourceMappingURL=reservation.css.map */

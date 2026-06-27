@@ -8,7 +8,9 @@
         "format": "prettier --write .",
         "format:check": "prettier --check .",
         "lint": "eslint src/**/*.js",
-        "lint:fix": "eslint src/**/*.js --fix"
+        "lint:fix": "eslint src/**/*.js --fix",
+        "prepare": "husky",
+        "husky:init": "chmod +x .husky/pre-commit"
     },
     "repository": {
         "type": "git",
@@ -27,6 +29,8 @@
         "eslint": "^10.6.0",
         "eslint-config-prettier": "^10.1.8",
         "globals": "^17.7.0",
+        "husky": "^9.1.7",
+        "lint-staged": "^17.0.8",
         "prettier": "^3.8.5"
     }
 }

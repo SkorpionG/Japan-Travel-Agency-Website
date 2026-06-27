@@ -1,1 +1,21 @@
-# Japan-Travel-Agency-Website
+# 日本旅遊推薦 (Japan Travel Agency Website)
+
+一個為旅客提供日本旅遊推薦與行程規劃的現代化響應式網站。本專案採用乾淨、語義化的 HTML5、CSS/SCSS 進行樣式設計，並使用原生 JavaScript 和 Native Web Components（網頁元件）來實現模組化的排版佈局。
+
+---
+
+## 🚀 專案特點
+
+- **響應式網頁設計 (RWD)**：支援手機、平板及桌電等多種螢幕尺寸的優質瀏覽體驗。
+- **原生網頁元件 (Native Web Components)**：使用原生 JS 定義 `<site-header>` 與 `<site-footer>` 元件，大幅減少多個 HTML 頁面間重複代碼的維護成本。
+- **動態背景切換**：首頁與子頁面支援背景輪播效果，並能根據目前的頁面路徑層級自動解析正確的資源路徑。
+- **完善的開發工具鏈**：整合 **Prettier**（自動代碼格式化）與 **ESLint**（語法及潛在錯誤偵測），確保代碼風格一致性。
+
+---
+
+## 🌐 本地預覽
+
+由於本專案為純靜態網站，您可以使用以下任一方式進行本地預覽：
+
+1.  **直接開啟**：在瀏覽器中雙擊並開啟根目錄底下的 `index.html`。
+2.  **使用 Live Server**：如果您使用 VS Code，可安裝 `Live Server` 擴充套件並點擊 `Go Live` 進行即時預覽。

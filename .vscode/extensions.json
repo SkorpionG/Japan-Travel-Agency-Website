@@ -1,7 +1,8 @@
 {
-  "recommendations": [
-    "ms-vscode.live-server",
-    "ritwickdey.liveserver",
-    "glenn2223.live-sass"
-  ]
+    "recommendations": [
+        "ms-vscode.live-server",
+        "ritwickdey.liveserver",
+        "glenn2223.live-sass",
+        "esbenp.prettier-vscode"
+    ]
 }

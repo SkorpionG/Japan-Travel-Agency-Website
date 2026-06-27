@@ -1,14 +1,14 @@
 @charset "UTF-8";
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 html {
-  scrollbar-width: auto;
-  scrollbar-color: rgba(152, 57, 255, 0.5) white;
-  scroll-behavior: smooth;
+    scrollbar-width: auto;
+    scrollbar-color: rgba(152, 57, 255, 0.5) white;
+    scroll-behavior: smooth;
 }
 
 h1,
@@ -17,237 +17,240 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: normal;
+    font-weight: normal;
 }
 
 body {
-  background-image: url("../../public/assets/富士山2.jpg");
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
+    background-image: url('../../public/assets/富士山2.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 header {
-  position: sticky;
-  top: 0;
-  background-color: white;
-  display: flex;
-  align-items: center;
-  box-shadow: 0 10px 6px -6px #777;
-  flex-wrap: wrap;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 10px 6px -6px #777;
+    flex-wrap: wrap;
 }
 header a.logo {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  text-decoration: none;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    text-decoration: none;
 }
 header a.logo h1 {
-  font-size: 2.5rem;
-  color: black;
+    font-size: 2.5rem;
+    color: black;
 }
 header a.logo img {
-  width: 6rem;
-  height: 6rem;
+    width: 6rem;
+    height: 6rem;
 }
 header nav {
-  flex: 5 1 500px;
+    flex: 5 1 500px;
 }
 header nav ul {
-  display: flex;
-  list-style-type: none;
-  justify-content: space-around;
-  align-items: center;
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+    align-items: center;
 }
 header nav ul li a {
-  color: black;
-  text-decoration: none;
-  font-size: 1.35rem;
-  transition: all 0.2s ease;
-  padding-bottom: 0.3rem;
+    color: black;
+    text-decoration: none;
+    font-size: 1.35rem;
+    transition: all 0.2s ease;
+    padding-bottom: 0.3rem;
 }
 header nav ul li a:hover {
-  color: rgba(152, 57, 255, 0.5);
-  border-bottom: 3px solid rgba(152, 57, 255, 0.5);
+    color: rgba(152, 57, 255, 0.5);
+    border-bottom: 3px solid rgba(152, 57, 255, 0.5);
 }
 
 footer {
-  display: flex;
-  flex-direction: column;
-  padding: 2rem;
-  align-items: center;
-  color: white;
-  background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    align-items: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.3);
 }
 footer section.logo {
-  margin-top: 5rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 footer section.logo img {
-  width: 6rem;
-  height: 6rem;
+    width: 6rem;
+    height: 6rem;
 }
 footer section.logo h3 {
-  font-size: 2.5rem;
+    font-size: 2.5rem;
 }
 footer section.links {
-  margin-top: 2rem;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 footer section.links a {
-  margin: 1rem;
+    margin: 1rem;
 }
 footer section.links a img {
-  width: 4rem;
+    width: 4rem;
 }
 
 @media screen and (max-width: 1120px) {
-  header {
-    flex-direction: column;
-  }
-  header a.logo {
-    flex: 1;
-  }
-  header nav {
-    flex: 1;
-    width: 100%;
-    margin-bottom: 1rem;
-  }
+    header {
+        flex-direction: column;
+    }
+    header a.logo {
+        flex: 1;
+    }
+    header nav {
+        flex: 1;
+        width: 100%;
+        margin-bottom: 1rem;
+    }
 }
 @media screen and (max-width: 680px) {
-  header {
-    position: static;
-  }
-  header a.logo {
-    flex-direction: column;
-    border-bottom: 1px solid black;
-    margin-bottom: 0.5rem;
-  }
-  header a.logo h1 {
-    font-size: 2rem;
-    color: black;
-  }
-  header nav ul {
-    flex-direction: column;
-    align-items: center;
-    gap: 0.5rem;
-  }
+    header {
+        position: static;
+    }
+    header a.logo {
+        flex-direction: column;
+        border-bottom: 1px solid black;
+        margin-bottom: 0.5rem;
+    }
+    header a.logo h1 {
+        font-size: 2rem;
+        color: black;
+    }
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+    }
 }
 main {
-  background-color: transparent !important;
+    background-color: transparent !important;
 }
 main section.background-image {
-  min-height: 70vh;
-  background-image: url("../../public/assets/大阪街頭.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  transition: all 0.75s ease;
+    min-height: 70vh;
+    background-image: url('../../public/assets/大阪街頭.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: all 0.75s ease;
 }
 main section.background-image div.filter {
-  background-color: rgba(0, 0, 0, 0.5);
-  width: 100%;
-  min-height: 70vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    min-height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 main section.background-image h3 {
-  color: white;
-  font-size: 2.5rem;
-  text-align: center;
+    color: white;
+    font-size: 2.5rem;
+    text-align: center;
 }
 main section.info-circles {
-  background-color: white;
-  padding: 3rem 1.5rem;
+    background-color: white;
+    padding: 3rem 1.5rem;
 }
 main section.info-circles h3 {
-  text-align: center;
-  font-size: 2rem;
+    text-align: center;
+    font-size: 2rem;
 }
 main section.info-circles div.circles {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 main section.info-circles div.circles div.circle {
-  padding: 1rem;
-  flex: 0 1 250px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 0.5rem;
+    padding: 1rem;
+    flex: 0 1 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
 }
 main section.info-circles div.circles div.circle img {
-  width: 80%;
-  border-radius: 50%;
-  transition: all 0.125s ease-in;
-  padding: 0.2rem;
+    width: 80%;
+    border-radius: 50%;
+    transition: all 0.125s ease-in;
+    padding: 0.2rem;
 }
 main section.info-circles div.circles div.circle img:hover {
-  border: 3px solid rgba(152, 57, 255, 0.5);
+    border: 3px solid rgba(152, 57, 255, 0.5);
 }
 main section.empty-container {
-  min-height: 60vh;
-  background-color: rgba(0, 0, 0, 0.7);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 0 3rem;
-  gap: 1.5rem;
+    min-height: 60vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 3rem;
+    gap: 1.5rem;
 }
 main section.empty-container h3#reservation-title {
-  color: white;
-  font-size: 2rem;
-  text-align: center;
+    color: white;
+    font-size: 2rem;
+    text-align: center;
 }
 main section.empty-container p#reservation-description {
-  color: white;
-  font-size: 1.1rem;
-  text-align: center;
-  max-width: 800px;
+    color: white;
+    font-size: 1.1rem;
+    text-align: center;
+    max-width: 800px;
 }
 main section.empty-container button#reservation-cta {
-  padding: 0.75rem 1.25rem;
-  font-size: 1rem;
-  font-weight: bold;
-  color: rgba(152, 57, 255, 0.5);
-  background-color: white;
-  border: none;
-  border-radius: 25px;
-  cursor: pointer;
-  transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 0.75rem 1.25rem;
+    font-size: 1rem;
+    font-weight: bold;
+    color: rgba(152, 57, 255, 0.5);
+    background-color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition:
+        background-color 0.3s ease,
+        color 0.3s ease,
+        transform 0.2s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 main section.empty-container button#reservation-cta:hover {
-  background-color: #e6e6e6;
-  color: rgba(125, 6, 255, 0.5);
-  transform: translateY(-2px);
+    background-color: #e6e6e6;
+    color: rgba(125, 6, 255, 0.5);
+    transform: translateY(-2px);
 }
 main section.empty-container button#reservation-cta:active {
-  transform: translateY(0);
+    transform: translateY(0);
 }
 main section.google-map {
-  background-color: white;
-  padding: 3rem 1.5rem;
-  text-align: center;
+    background-color: white;
+    padding: 3rem 1.5rem;
+    text-align: center;
 }
 main section.google-map h3 {
-  font-size: 2.5rem;
+    font-size: 2.5rem;
 }
 main section.google-map P {
-  font-size: 1.25rem;
-  margin: 1rem;
+    font-size: 1.25rem;
+    margin: 1rem;
 }
 main section.google-map iframe {
-  width: 100%;
-  height: 40vh;
-}/*# sourceMappingURL=style.css.map */
+    width: 100%;
+    height: 40vh;
+} /*# sourceMappingURL=style.css.map */

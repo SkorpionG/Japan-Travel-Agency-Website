@@ -1,14 +1,14 @@
 @charset "UTF-8";
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 html {
-  scrollbar-width: auto;
-  scrollbar-color: rgba(152, 57, 255, 0.5) white;
-  scroll-behavior: smooth;
+    scrollbar-width: auto;
+    scrollbar-color: rgba(152, 57, 255, 0.5) white;
+    scroll-behavior: smooth;
 }
 
 h1,
@@ -17,306 +17,306 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: normal;
+    font-weight: normal;
 }
 
 body {
-  background-image: url("../../public/assets/富士山2.jpg");
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
+    background-image: url('../../public/assets/富士山2.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 header {
-  position: sticky;
-  top: 0;
-  background-color: white;
-  display: flex;
-  align-items: center;
-  box-shadow: 0 10px 6px -6px #777;
-  flex-wrap: wrap;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 10px 6px -6px #777;
+    flex-wrap: wrap;
 }
 header a.logo {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  text-decoration: none;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    text-decoration: none;
 }
 header a.logo h1 {
-  font-size: 2.5rem;
-  color: black;
+    font-size: 2.5rem;
+    color: black;
 }
 header a.logo img {
-  width: 6rem;
-  height: 6rem;
+    width: 6rem;
+    height: 6rem;
 }
 header nav {
-  flex: 5 1 500px;
+    flex: 5 1 500px;
 }
 header nav ul {
-  display: flex;
-  list-style-type: none;
-  justify-content: space-around;
-  align-items: center;
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+    align-items: center;
 }
 header nav ul li a {
-  color: black;
-  text-decoration: none;
-  font-size: 1.35rem;
-  transition: all 0.2s ease;
-  padding-bottom: 0.3rem;
+    color: black;
+    text-decoration: none;
+    font-size: 1.35rem;
+    transition: all 0.2s ease;
+    padding-bottom: 0.3rem;
 }
 header nav ul li a:hover {
-  color: rgba(152, 57, 255, 0.5);
-  border-bottom: 3px solid rgba(152, 57, 255, 0.5);
+    color: rgba(152, 57, 255, 0.5);
+    border-bottom: 3px solid rgba(152, 57, 255, 0.5);
 }
 
 footer {
-  display: flex;
-  flex-direction: column;
-  padding: 2rem;
-  align-items: center;
-  color: white;
-  background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    align-items: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.3);
 }
 footer section.logo {
-  margin-top: 5rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 footer section.logo img {
-  width: 6rem;
-  height: 6rem;
+    width: 6rem;
+    height: 6rem;
 }
 footer section.logo h3 {
-  font-size: 2.5rem;
+    font-size: 2.5rem;
 }
 footer section.links {
-  margin-top: 2rem;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 footer section.links a {
-  margin: 1rem;
+    margin: 1rem;
 }
 footer section.links a img {
-  width: 4rem;
+    width: 4rem;
 }
 
 @media screen and (max-width: 1120px) {
-  header {
-    flex-direction: column;
-  }
-  header a.logo {
-    flex: 1;
-  }
-  header nav {
-    flex: 1;
-    width: 100%;
-    margin-bottom: 1rem;
-  }
+    header {
+        flex-direction: column;
+    }
+    header a.logo {
+        flex: 1;
+    }
+    header nav {
+        flex: 1;
+        width: 100%;
+        margin-bottom: 1rem;
+    }
 }
 @media screen and (max-width: 680px) {
-  header {
-    position: static;
-  }
-  header a.logo {
-    flex-direction: column;
-    border-bottom: 1px solid black;
-    margin-bottom: 0.5rem;
-  }
-  header a.logo h1 {
-    font-size: 2rem;
-    color: black;
-  }
-  header nav ul {
-    flex-direction: column;
-    align-items: center;
-    gap: 0.5rem;
-  }
+    header {
+        position: static;
+    }
+    header a.logo {
+        flex-direction: column;
+        border-bottom: 1px solid black;
+        margin-bottom: 0.5rem;
+    }
+    header a.logo h1 {
+        font-size: 2rem;
+        color: black;
+    }
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+    }
 }
 main section.about-hero {
-  background: linear-gradient(90deg, #9839ff 40%, #a277ff 100%);
-  color: white;
-  padding: 4rem 1.5rem;
-  text-align: center;
+    background: linear-gradient(90deg, #9839ff 40%, #a277ff 100%);
+    color: white;
+    padding: 4rem 1.5rem;
+    text-align: center;
 }
 main section.about-hero h2 {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
 }
 main section.about-hero p {
-  font-size: 1.25rem;
-  max-width: 700px;
-  margin: 0 auto;
-  line-height: 1.6;
+    font-size: 1.25rem;
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.6;
 }
 main section.about-content {
-  background: #fff;
-  padding: 3rem 2rem;
-  max-width: 900px;
-  margin: 3rem auto;
-  border-radius: 16px;
-  box-shadow: 0 4px 16px rgba(152, 57, 255, 0.08);
+    background: #fff;
+    padding: 3rem 2rem;
+    max-width: 900px;
+    margin: 3rem auto;
+    border-radius: 16px;
+    box-shadow: 0 4px 16px rgba(152, 57, 255, 0.08);
 }
 main section.about-content h3 {
-  color: #9839ff;
-  font-size: 2rem;
-  margin-bottom: 1.5rem;
+    color: #9839ff;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
 }
 main section.about-content p,
 main section.about-content ul {
-  margin-bottom: 2rem;
-  font-size: 1.1rem;
-  color: #444;
-  line-height: 1.7;
-  text-align: justify;
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+    color: #444;
+    line-height: 1.7;
+    text-align: justify;
 }
 main section.about-content ul {
-  padding-left: 1.5rem;
-  list-style: disc;
+    padding-left: 1.5rem;
+    list-style: disc;
 }
 main section.about-content ul li {
-  margin-bottom: 0.5rem;
+    margin-bottom: 0.5rem;
 }
 main section.about-content > *:last-child {
-  margin-bottom: 0;
+    margin-bottom: 0;
 }
 main section.about-values {
-  background: #f8f5ff;
-  padding: 3rem 2rem;
-  text-align: center;
+    background: #f8f5ff;
+    padding: 3rem 2rem;
+    text-align: center;
 }
 main section.about-values h3 {
-  color: #9839ff;
-  font-size: 2rem;
-  margin-bottom: 2rem;
+    color: #9839ff;
+    font-size: 2rem;
+    margin-bottom: 2rem;
 }
 main section.about-values .values-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 2rem;
-  max-width: 900px;
-  margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    max-width: 900px;
+    margin: 0 auto;
 }
 main section.about-values .values-container .value-item {
-  flex: 1 1 250px;
-  background: white;
-  border-radius: 10px;
-  box-shadow: 0 2px 6px rgba(152, 57, 255, 0.08);
-  padding: 2rem;
-  margin-bottom: 1rem;
-  text-align: center;
+    flex: 1 1 250px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(152, 57, 255, 0.08);
+    padding: 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
 }
 main section.about-values .values-container .value-item i {
-  font-size: 2.2rem;
-  color: #9839ff;
-  margin-bottom: 1rem;
-  display: inline-block;
+    font-size: 2.2rem;
+    color: #9839ff;
+    margin-bottom: 1rem;
+    display: inline-block;
 }
 main section.about-values .values-container .value-item h4 {
-  margin-top: 0;
-  margin-bottom: 0.5rem;
-  font-size: 1.2rem;
-  color: #333;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+    color: #333;
 }
 main section.about-values .values-container .value-item p {
-  color: #555;
-  font-size: 1rem;
-  line-height: 1.6;
+    color: #555;
+    font-size: 1rem;
+    line-height: 1.6;
 }
 main section.about-contact {
-  background: #fff;
-  padding: 3rem 1.5rem;
-  max-width: 900px;
-  margin: 2rem auto;
-  border-radius: 16px;
-  box-shadow: 0 4px 16px rgba(152, 57, 255, 0.08);
-  text-align: center;
+    background: #fff;
+    padding: 3rem 1.5rem;
+    max-width: 900px;
+    margin: 2rem auto;
+    border-radius: 16px;
+    box-shadow: 0 4px 16px rgba(152, 57, 255, 0.08);
+    text-align: center;
 }
 main section.about-contact h3 {
-  color: #9839ff;
-  font-size: 2rem;
-  margin-bottom: 1.5rem;
+    color: #9839ff;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
 }
 main section.about-contact .contact-details {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
 }
 main section.about-contact .contact-details p {
-  font-size: 1.1rem;
-  color: #444;
-  display: flex;
-  align-items: center;
-  gap: 0.75rem;
+    font-size: 1.1rem;
+    color: #444;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
 }
 main section.about-contact .contact-details p i {
-  color: #9839ff;
-  font-size: 1.3rem;
-  width: 20px;
-  text-align: center;
+    color: #9839ff;
+    font-size: 1.3rem;
+    width: 20px;
+    text-align: center;
 }
 main section.about-contact .contact-details p a {
-  color: #444;
-  text-decoration: none;
-  transition: color 0.3s ease;
+    color: #444;
+    text-decoration: none;
+    transition: color 0.3s ease;
 }
 main section.about-contact .contact-details p a:hover {
-  color: #9839ff;
-  text-decoration: underline;
+    color: #9839ff;
+    text-decoration: underline;
 }
 
 @media (max-width: 960px) {
-  main section.about-content,
-  main section.about-contact {
-    padding: 2rem 1.5rem;
-    margin: 2rem 2rem;
-  }
+    main section.about-content,
+    main section.about-contact {
+        padding: 2rem 1.5rem;
+        margin: 2rem 2rem;
+    }
 }
 @media (max-width: 780px) {
-  main section.about-hero {
-    padding: 3rem 1rem;
-  }
-  main section.about-hero h2 {
-    font-size: 2rem;
-  }
-  main section.about-hero p {
-    font-size: 1.1rem;
-  }
-  main section.about-content h3 {
-    font-size: 1.8rem;
-  }
-  main section.about-content p,
-  main section.about-content ul {
-    font-size: 1rem;
-  }
-  main section.about-values {
-    padding: 2rem 1.5rem;
-  }
-  main section.about-values h3 {
-    font-size: 1.8rem;
-  }
-  main section.about-values .values-container {
-    gap: 1.5rem;
-  }
-  main section.about-values .values-container .value-item {
-    padding: 1.5rem;
-  }
-  main section.about-contact h3 {
-    font-size: 1.8rem;
-  }
-  main section.about-contact .contact-details p {
-    font-size: 1rem;
-    gap: 0.5rem;
-  }
-  main section.about-contact .contact-details p i {
-    font-size: 1.2rem;
-  }
-}/*# sourceMappingURL=about.css.map */
+    main section.about-hero {
+        padding: 3rem 1rem;
+    }
+    main section.about-hero h2 {
+        font-size: 2rem;
+    }
+    main section.about-hero p {
+        font-size: 1.1rem;
+    }
+    main section.about-content h3 {
+        font-size: 1.8rem;
+    }
+    main section.about-content p,
+    main section.about-content ul {
+        font-size: 1rem;
+    }
+    main section.about-values {
+        padding: 2rem 1.5rem;
+    }
+    main section.about-values h3 {
+        font-size: 1.8rem;
+    }
+    main section.about-values .values-container {
+        gap: 1.5rem;
+    }
+    main section.about-values .values-container .value-item {
+        padding: 1.5rem;
+    }
+    main section.about-contact h3 {
+        font-size: 1.8rem;
+    }
+    main section.about-contact .contact-details p {
+        font-size: 1rem;
+        gap: 0.5rem;
+    }
+    main section.about-contact .contact-details p i {
+        font-size: 1.2rem;
+    }
+} /*# sourceMappingURL=about.css.map */

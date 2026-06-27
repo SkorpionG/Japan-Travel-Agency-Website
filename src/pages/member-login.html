@@ -1,18 +1,21 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="zh-Hant">
-
     <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>會員登入 | 日本旅遊推薦</title>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
             integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-            crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="stylesheet" href="../style/member-login.css">
-        <link rel="icon" href="../../public/assets/網站Logo.svg">
-    <script src="../../src/components/site-header.js"></script>
-    <script src="../../src/components/site-footer.js"></script>
-</head>
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <link rel="stylesheet" href="../style/member-login.css" />
+        <link rel="icon" href="../../public/assets/網站Logo.svg" />
+        <script src="../../src/components/site-header.js"></script>
+        <script src="../../src/components/site-footer.js"></script>
+    </head>
     <body>
         <site-header active="member-login" root="../../"></site-header>
         <main>
@@ -21,46 +24,84 @@
                 <form id="login-form" autocomplete="on">
                     <div class="form-group">
                         <label class="form-label" for="login-email">電子郵件</label>
-                        <input class="form-input" id="login-email" name="email" type="email" required
-                            placeholder="請輸入電子郵件">
+                        <input
+                            class="form-input"
+                            id="login-email"
+                            name="email"
+                            type="email"
+                            required
+                            placeholder="請輸入電子郵件"
+                        />
                     </div>
                     <div class="form-group">
                         <label class="form-label" for="login-password">密碼</label>
-                        <input class="form-input" id="login-password" name="password" type="password" required
-                            placeholder="請輸入密碼">
+                        <input
+                            class="form-input"
+                            id="login-password"
+                            name="password"
+                            type="password"
+                            required
+                            placeholder="請輸入密碼"
+                        />
                     </div>
                     <button class="form-submit" type="submit">登入</button>
                 </form>
-                <p style="text-align:center; margin-top:1rem;">還不是會員？ <span class="toggle-link"
-                        id="show-register">註冊新帳號</span></p>
+                <p style="text-align: center; margin-top: 1rem">
+                    還不是會員？ <span class="toggle-link" id="show-register">註冊新帳號</span>
+                </p>
             </section>
             <section class="form-container hidden" id="register-section">
                 <h2 class="form-title">會員註冊</h2>
                 <form id="register-form" autocomplete="on">
                     <div class="form-group">
                         <label class="form-label" for="register-name">姓名</label>
-                        <input class="form-input" id="register-name" name="name" type="text" required
-                            placeholder="請輸入姓名">
+                        <input
+                            class="form-input"
+                            id="register-name"
+                            name="name"
+                            type="text"
+                            required
+                            placeholder="請輸入姓名"
+                        />
                     </div>
                     <div class="form-group">
                         <label class="form-label" for="register-email">電子郵件</label>
-                        <input class="form-input" id="register-email" name="email" type="email" required
-                            placeholder="請輸入電子郵件">
+                        <input
+                            class="form-input"
+                            id="register-email"
+                            name="email"
+                            type="email"
+                            required
+                            placeholder="請輸入電子郵件"
+                        />
                     </div>
                     <div class="form-group">
                         <label class="form-label" for="register-password">密碼</label>
-                        <input class="form-input" id="register-password" name="password" type="password" required
-                            placeholder="請輸入密碼">
+                        <input
+                            class="form-input"
+                            id="register-password"
+                            name="password"
+                            type="password"
+                            required
+                            placeholder="請輸入密碼"
+                        />
                     </div>
                     <div class="form-group">
                         <label class="form-label" for="register-confirm">確認密碼</label>
-                        <input class="form-input" id="register-confirm" name="confirm" type="password" required
-                            placeholder="請再次輸入密碼">
+                        <input
+                            class="form-input"
+                            id="register-confirm"
+                            name="confirm"
+                            type="password"
+                            required
+                            placeholder="請再次輸入密碼"
+                        />
                     </div>
                     <button class="form-submit" type="submit">註冊</button>
                 </form>
-                <p style="text-align:center; margin-top:1rem;">已經有帳號？ <span class="toggle-link"
-                        id="show-login">返回登入</span></p>
+                <p style="text-align: center; margin-top: 1rem">
+                    已經有帳號？ <span class="toggle-link" id="show-login">返回登入</span>
+                </p>
             </section>
         </main>
         <site-footer root="../../"></site-footer>
@@ -77,5 +118,4 @@
         </script>
         <script src="../script.js" defer></script>
     </body>
-
 </html>

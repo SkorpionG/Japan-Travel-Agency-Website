@@ -2,7 +2,7 @@ class SiteFooter extends HTMLElement {
     connectedCallback() {
         const root = this.getAttribute('root') || './';
         const year = new Date().getFullYear();
-        
+
         this.innerHTML = `
         <footer>
             <section class="logo">
@@ -21,7 +21,7 @@ class SiteFooter extends HTMLElement {
             </section>
         </footer>
         `;
-        
+
         // Add fade-in transition
         this.style.opacity = '0';
         this.style.transition = 'opacity 0.2s ease-in-out';

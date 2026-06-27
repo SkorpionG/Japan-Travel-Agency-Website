@@ -1,18 +1,21 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="zh-Hant">
-
     <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>預約行程 | 日本旅遊推薦</title>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
             integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-            crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="stylesheet" href="../style/reservation.css">
-        <link rel="icon" href="../../public/assets/網站Logo.svg">
-    <script src="../../src/components/site-header.js"></script>
-    <script src="../../src/components/site-footer.js"></script>
-</head>
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <link rel="stylesheet" href="../style/reservation.css" />
+        <link rel="icon" href="../../public/assets/網站Logo.svg" />
+        <script src="../../src/components/site-header.js"></script>
+        <script src="../../src/components/site-footer.js"></script>
+    </head>
 
     <body>
         <site-header active="reservation" root="../../"></site-header>
@@ -23,28 +26,50 @@
                     <p class="form-instructions">請填寫以下資訊以預約您的日本旅遊行程。</p>
                     <div class="form-group">
                         <label for="name" class="form-label">姓名</label>
-                        <input type="text" id="name" name="name" required class="form-input">
+                        <input type="text" id="name" name="name" required class="form-input" />
                     </div>
                     <div class="form-group">
                         <label for="email" class="form-label">Email</label>
-                        <input type="email" id="email" name="email" required class="form-input">
+                        <input type="email" id="email" name="email" required class="form-input" />
                     </div>
                     <div class="form-group">
                         <label for="date" class="form-label">出發日期</label>
-                        <input type="date" id="date" name="date" required class="form-input">
+                        <input type="date" id="date" name="date" required class="form-input" />
                     </div>
                     <div class="form-group">
                         <label for="people" class="form-label">人數</label>
-                        <input type="number" id="people" name="people" required class="form-input" min="1" value="1">
+                        <input
+                            type="number"
+                            id="people"
+                            name="people"
+                            required
+                            class="form-input"
+                            min="1"
+                            value="1"
+                        />
                     </div>
                     <div class="form-group">
                         <label for="days" class="form-label">總天數</label>
-                        <input type="number" id="days" name="days" required class="form-input" min="1">
+                        <input
+                            type="number"
+                            id="days"
+                            name="days"
+                            required
+                            class="form-input"
+                            min="1"
+                        />
                     </div>
                     <div class="form-group">
                         <label for="budget" class="form-label">預算 (每人 TWD)</label>
-                        <input type="number" id="budget" name="budget" class="form-input" min="0" step="1000"
-                            placeholder="例如 30000">
+                        <input
+                            type="number"
+                            id="budget"
+                            name="budget"
+                            class="form-input"
+                            min="0"
+                            step="1000"
+                            placeholder="例如 30000"
+                        />
                     </div>
                     <div class="form-group">
                         <label for="destinations" class="form-label">旅遊目的地（可多選）</label>
@@ -58,8 +83,13 @@
                     </div>
                     <div class="form-group">
                         <label for="preferences" class="form-label">旅遊偏好</label>
-                        <input type="text" id="preferences" name="preferences" placeholder="如美食、溫泉、購物等"
-                            class="form-input">
+                        <input
+                            type="text"
+                            id="preferences"
+                            name="preferences"
+                            placeholder="如美食、溫泉、購物等"
+                            class="form-input"
+                        />
                     </div>
                     <div class="form-group">
                         <label for="notes" class="form-label">備註</label>
@@ -72,5 +102,4 @@
         <site-footer root="../../"></site-footer>
         <script src="../script.js" defer></script>
     </body>
-
 </html>

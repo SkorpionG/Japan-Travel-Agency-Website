@@ -1,134 +1,136 @@
-@import "styles";
+@import 'styles';
 
 main {
-  background-color: transparent !important;
-  section.background-image {
-    // 設定背景圖片
-    min-height: 70vh;
-    background-image: url("../../public/assets/大阪街頭.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    transition: all 0.75s ease;
+    background-color: transparent !important;
+    section.background-image {
+        // 設定背景圖片
+        min-height: 70vh;
+        background-image: url('../../public/assets/大阪街頭.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        transition: all 0.75s ease;
 
-    div.filter {
-      background-color: rgba(0, 0, 0, 0.5);
-      width: 100%;
-      min-height: 70vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+        div.filter {
+            background-color: rgba(0, 0, 0, 0.5);
+            width: 100%;
+            min-height: 70vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        h3 {
+            color: white;
+            font-size: 2.5rem;
+            text-align: center;
+        }
     }
 
-    h3 {
-      color: white;
-      font-size: 2.5rem;
-      text-align: center;
+    section.info-circles {
+        background-color: white;
+        padding: 3rem 1.5rem;
+
+        h3 {
+            text-align: center;
+            font-size: 2rem;
+        }
+
+        div.circles {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+
+            div.circle {
+                padding: 1rem;
+                flex: 0 1 250px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 0.5rem;
+
+                img {
+                    width: 80%;
+                    border-radius: 50%;
+                    transition: all 0.125s ease-in;
+                    padding: 0.2rem;
+
+                    &:hover {
+                        border: 3px solid $themeColor;
+                    }
+                }
+            }
+        }
     }
-  }
 
-  section.info-circles {
-    background-color: white;
-    padding: 3rem 1.5rem;
-
-    h3 {
-      text-align: center;
-      font-size: 2rem;
-    }
-
-    div.circles {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-
-      div.circle {
-        padding: 1rem;
-        flex: 0 1 250px;
+    section.empty-container {
+        min-height: 60vh;
+        background-color: rgba(0, 0, 0, 0.7);
         display: flex;
         flex-direction: column;
-        align-items: center;
         justify-content: center;
-        gap: 0.5rem;
+        align-items: center;
+        padding: 0 3rem;
+        gap: 1.5rem;
 
-        img {
-          width: 80%;
-          border-radius: 50%;
-          transition: all 0.125s ease-in;
-          padding: 0.2rem;
-
-          &:hover {
-            border: 3px solid $themeColor;
-          }
+        h3#reservation-title {
+            color: white;
+            font-size: 2rem;
+            text-align: center;
         }
-      }
-    }
-  }
 
-  section.empty-container {
-    min-height: 60vh;
-    background-color: rgba(0, 0, 0, 0.7);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 0 3rem;
-    gap: 1.5rem;
+        p#reservation-description {
+            color: white;
+            font-size: 1.1rem;
+            text-align: center;
+            max-width: 800px; // Limit paragraph width for readability
+        }
 
-    h3#reservation-title {
-      color: white;
-      font-size: 2rem;
-      text-align: center;
-    }
+        button#reservation-cta {
+            padding: 0.75rem 1.25rem;
+            font-size: 1rem;
+            font-weight: bold;
+            color: $themeColor;
+            background-color: white;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            transition:
+                background-color 0.3s ease,
+                color 0.3s ease,
+                transform 0.2s ease;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 
-    p#reservation-description {
-      color: white;
-      font-size: 1.1rem;
-      text-align: center;
-      max-width: 800px; // Limit paragraph width for readability
-    }
+            &:hover {
+                background-color: darken(white, 10%);
+                color: darken($themeColor, 10%);
+                transform: translateY(-2px);
+            }
 
-    button#reservation-cta {
-      padding: 0.75rem 1.25rem;
-      font-size: 1rem;
-      font-weight: bold;
-      color: $themeColor;
-      background-color: white;
-      border: none;
-      border-radius: 25px;
-      cursor: pointer;
-      transition: background-color 0.3s ease, color 0.3s ease,
-        transform 0.2s ease;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-
-      &:hover {
-        background-color: darken(white, 10%);
-        color: darken($themeColor, 10%);
-        transform: translateY(-2px);
-      }
-
-      &:active {
-        transform: translateY(0);
-      }
-    }
-  }
-
-  section.google-map {
-    background-color: white;
-    padding: 3rem 1.5rem;
-    text-align: center;
-
-    h3 {
-      font-size: 2.5rem;
+            &:active {
+                transform: translateY(0);
+            }
+        }
     }
 
-    P {
-      font-size: 1.25rem;
-      margin: 1rem;
-    }
+    section.google-map {
+        background-color: white;
+        padding: 3rem 1.5rem;
+        text-align: center;
 
-    iframe {
-      width: 100%;
-      height: 40vh;
+        h3 {
+            font-size: 2.5rem;
+        }
+
+        P {
+            font-size: 1.25rem;
+            margin: 1rem;
+        }
+
+        iframe {
+            width: 100%;
+            height: 40vh;
+        }
     }
-  }
 }

@@ -1,39 +1,39 @@
-@import "form";
+@import 'form';
 
 main {
-  section.reservation-section {
-    padding: 4rem 1rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
+    section.reservation-section {
+        padding: 4rem 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
 
-    // Style for multi-select height
-    select[multiple] {
-      height: auto; // Adjust height automatically
-      min-height: 2.5rem;
-      padding: 0.8rem;
+        // Style for multi-select height
+        select[multiple] {
+            height: auto; // Adjust height automatically
+            min-height: 2.5rem;
+            padding: 0.8rem;
+        }
+
+        // Style number inputs to prevent spinner arrows overlapping text on some browsers
+        input[type='number'] {
+            appearance: textfield; // Hide default spinner for Firefox
+            -moz-appearance: textfield; // Firefox specific
+
+            &::-webkit-outer-spin-button,
+            &::-webkit-inner-spin-button {
+                -webkit-appearance: none; // Hide default spinner for Chrome, Safari, Edge, Opera
+                margin: 0;
+            }
+        }
     }
-
-    // Style number inputs to prevent spinner arrows overlapping text on some browsers
-    input[type="number"] {
-      appearance: textfield; // Hide default spinner for Firefox
-      -moz-appearance: textfield; // Firefox specific
-
-      &::-webkit-outer-spin-button,
-      &::-webkit-inner-spin-button {
-        -webkit-appearance: none; // Hide default spinner for Chrome, Safari, Edge, Opera
-        margin: 0;
-      }
-    }
-  }
 }
 
 @media (max-width: 700px) {
-  main section.contact-section {
-    padding: 2rem 1rem;
-    .form-container {
-      padding: 1.5rem;
+    main section.contact-section {
+        padding: 2rem 1rem;
+        .form-container {
+            padding: 1.5rem;
+        }
     }
-  }
 }

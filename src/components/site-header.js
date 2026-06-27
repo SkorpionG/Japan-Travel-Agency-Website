@@ -3,7 +3,7 @@ class SiteHeader extends HTMLElement {
         const root = this.getAttribute('root') || './';
         const active = this.getAttribute('active') || '';
         const year = new Date().getFullYear();
-        
+
         this.innerHTML = `
         <header>
             <a href="${root}index.html" class="logo">
@@ -21,7 +21,7 @@ class SiteHeader extends HTMLElement {
             </nav>
         </header>
         `;
-        
+
         // Add fade-in transition
         this.style.opacity = '0';
         this.style.transition = 'opacity 0.2s ease-in-out';

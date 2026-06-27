@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="100%" height="100%">
+  <defs>
+    <linearGradient id="sunGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ff4b5c"/>
+      <stop offset="100%" stop-color="#ff2e93"/>
+    </linearGradient>
+  </defs>
+  <!-- Beautiful gradient circle for Rising Sun -->
+  <circle cx="32" cy="32" r="28" fill="url(#sunGrad)" />
+  
+  <!-- Mt. Fuji outline -->
+  <path d="M32 16 L48 48 L16 48 Z" fill="#ffffff" />
+  <!-- Snowcap -->
+  <path d="M32 16 L37 26 C35 25, 33 27, 32 25 C31 27, 29 25, 27 26 Z" fill="#e0e0e0" />
+
+  <!-- Torii Gate in foreground -->
+  <g fill="#2d3748">
+    <!-- Top lintel (curved) -->
+    <path d="M18 43 Q32 40 46 43 L46 40 Q32 37 18 40 Z" />
+    <!-- Secondary tie beam -->
+    <rect x="21" y="44" width="22" height="2" />
+    <!-- Pillars -->
+    <rect x="23" y="44" width="3" height="12" transform="skewX(-3)" />
+    <rect x="38" y="44" width="3" height="12" transform="skewX(3)" />
+  </g>
+</svg>

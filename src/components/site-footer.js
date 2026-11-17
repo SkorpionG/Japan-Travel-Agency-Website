@@ -1,9 +1,9 @@
 class SiteFooter extends HTMLElement {
-    connectedCallback() {
-        const root = this.getAttribute('root') || './';
-        const year = new Date().getFullYear();
+  connectedCallback() {
+    const root = this.getAttribute("root") || "./";
+    const year = new Date().getFullYear();
 
-        this.innerHTML = `
+    this.innerHTML = `
         <footer>
             <section class="logo">
                 <img src="${root}public/assets/網站Logo.svg" alt="日本旅遊網Logo" />
@@ -22,12 +22,12 @@ class SiteFooter extends HTMLElement {
         </footer>
         `;
 
-        // Add fade-in transition
-        this.style.opacity = '0';
-        this.style.transition = 'opacity 0.2s ease-in-out';
-        setTimeout(() => {
-            this.style.opacity = '1';
-        }, 10);
-    }
+    // Add fade-in transition
+    this.style.opacity = "0";
+    this.style.transition = "opacity 0.2s ease-in-out";
+    setTimeout(() => {
+      this.style.opacity = "1";
+    }, 10);
+  }
 }
-customElements.define('site-footer', SiteFooter);
+customElements.define("site-footer", SiteFooter);

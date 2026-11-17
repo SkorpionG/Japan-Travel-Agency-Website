@@ -1,0 +1,36 @@
+@import "form";
+
+.toggle-link {
+  color: #9839ff;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.toggle-link:hover {
+  color: #6d36b8;
+}
+
+.hidden {
+  display: none;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 4rem 1rem;
+}
+
+button.form-submit {
+  margin-top: 2.5rem;
+}
+
+footer {
+  padding: 2rem 0;
+  background-color: rgba(0, 0, 0, 0.6);
+
+  section.logo {
+    margin-top: 0;
+  }
+}

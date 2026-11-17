@@ -1,34 +1,41 @@
 {
-    "name": "japan-travel-agency-website",
-    "version": "1.0.0",
-    "description": "An imaginary travel agency for Japan-related travel itineraries",
-    "private": true,
-    "scripts": {
-        "format": "prettier --write .",
-        "format:check": "prettier --check .",
-        "lint": "eslint src/**/*.js",
-        "lint:fix": "eslint src/**/*.js --fix",
-        "prepare": "husky",
-        "husky:init": "chmod +x .husky/pre-commit"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/SkorpionG/Japan-Travel-Agency-Website.git"
-    },
-    "keywords": [],
-    "author": "SkorpionG",
-    "type": "commonjs",
-    "bugs": {
-        "url": "https://github.com/SkorpionG/Japan-Travel-Agency-Website/issues"
-    },
-    "homepage": "https://github.com/SkorpionG/Japan-Travel-Agency-Website#readme",
-    "devDependencies": {
-        "@eslint/js": "^10.0.1",
-        "eslint": "^10.15.0",
-        "eslint-config-prettier": "^10.1.8",
-        "globals": "^17.14.0",
-        "husky": "^9.1.7",
-        "lint-staged": "^17.6.1",
-        "prettier": "^3.10.1"
-    }
+  "name": "japan-travel-agency-website",
+  "version": "1.0.0",
+  "description": "An imaginary travel agency website for Japan travel itineraries and reservations.",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "lint": "eslint \"src/**/*.js\"",
+    "lint:fix": "eslint \"src/**/*.js\" --fix",
+    "prepare": "husky",
+    "husky:init": "chmod +x .husky/pre-commit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SkorpionG/Japan-Travel-Agency-Website.git"
+  },
+  "keywords": [
+    "japan",
+    "travel",
+    "itinerary",
+    "scss",
+    "web-components"
+  ],
+  "author": "SkorpionG",
+  "bugs": {
+    "url": "https://github.com/SkorpionG/Japan-Travel-Agency-Website/issues"
+  },
+  "homepage": "https://github.com/SkorpionG/Japan-Travel-Agency-Website#readme",
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.15.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-prettier": "^5.5.7",
+    "globals": "^17.14.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^17.6.1",
+    "prettier": "^3.10.1"
+  }
 }

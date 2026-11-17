@@ -1,9 +1,10 @@
 {
-    "recommendations": [
-        "ms-vscode.live-server",
-        "ritwickdey.liveserver",
-        "glenn2223.live-sass",
-        "esbenp.prettier-vscode",
-        "EditorConfig.EditorConfig"
-    ]
+  "recommendations": [
+    "ms-vscode.live-server",
+    "ritwickdey.liveserver",
+    "esbenp.prettier-vscode",
+    "dbaeumer.vscode-eslint",
+    "editorconfig.editorconfig",
+    "glenn2223.live-sass"
+  ]
 }

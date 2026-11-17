@@ -1,0 +1,20 @@
+@import "form";
+
+main {
+  section.contact-section {
+    padding: 4rem 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+}
+
+@media (max-width: 700px) {
+  main section.contact-section {
+    padding: 2rem 1rem;
+    .form-container {
+      padding: 1.5rem;
+    }
+  }
+}

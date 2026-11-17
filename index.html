@@ -1,93 +1,138 @@
 <!doctype html>
 <html lang="zh-Hant">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-            integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-            crossorigin="anonymous"
-            referrerpolicy="no-referrer"
-        />
-        <link rel="stylesheet" href="./src/style/style.css" />
-        <script src="./src/components/site-header.js"></script>
-        <script src="./src/components/site-footer.js"></script>
+  <head>
+    <!-- Primary Meta Tags -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="提供最專業、客製化的日本旅遊行程規劃。包含北海道雪景、日本美食、溫泉、京都清水寺等熱門景點推薦，助您打造難忘的日本之旅。"
+    />
+    <meta name="author" content="日本旅遊推薦" />
+    <meta name="creator" content="SkorpionG" />
+    <meta name="publisher" content="SkorpionG" />
+    <meta name="application-name" content="日本旅遊推薦" />
+    <meta
+      name="keywords"
+      content="日本旅遊, 日本行程規劃, 北海道雪景, 日本美食, 溫泉, 清水寺, 京都旅遊, 自由行"
+    />
 
-        <script src="./src/components/site-metadata.js"></script>
-        <site-metadata
-            title="日本旅遊推薦 | 規劃您的完美日本之旅"
-            description="提供最專業、客製化的日本旅遊行程規劃。包含北海道雪景、日本美食、溫泉、京都清水寺等熱門景點推薦，助您打造難忘的日本之旅。"
-            keywords="日本旅遊, 日本行程規劃, 北海道雪景, 日本美食, 溫泉, 清水寺, 京都旅遊, 自由行"
-            root="./"
-        ></site-metadata>
-    </head>
+    <!-- Search Engine Indexing -->
+    <meta name="robots" content="noindex, nofollow" />
+    <!-- <meta name="robots" content="index, follow" /> -->
+    <link rel="canonical" href="https://skorpiong.github.io/Japan-Travel-Agency-Website/" />
 
-    <body>
-        <site-header active="index" root="./"></site-header>
-        <main>
-            <section class="background-image">
-                <div class="filter">
-                    <h3>休閒空間，特殊假期。<br />安排一趟日本旅遊行程，放鬆身心。</h3>
-                </div>
-            </section>
-            <section class="info-circles">
-                <h3>遊玩主題</h3>
-                <div class="circles">
-                    <div class="circle">
-                        <img
-                            title="北海道雪景"
-                            src="./public/assets/北海道雪景.jpg"
-                            alt="北海道雪景"
-                        />
-                        <p>北海道雪景，美不勝收</p>
-                    </div>
-                    <div class="circle">
-                        <img
-                            title="日本道地壽司"
-                            src="./public/assets/日本壽司.jpg"
-                            alt="日本壽司"
-                        />
-                        <p>日本道地壽司與美食</p>
-                    </div>
-                    <div class="circle">
-                        <img title="富士山風景" src="./public/assets/富士山.jpg" alt="富士山" />
-                        <p>富士山風景與溫泉</p>
-                    </div>
-                    <div class="circle">
-                        <img title="京都清水寺" src="./public/assets/清水寺.jpg" alt="清水寺" />
-                        <p>京都清水寺，千年古都</p>
-                    </div>
-                </div>
-            </section>
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://skorpiong.github.io/Japan-Travel-Agency-Website/" />
+    <meta property="og:title" content="日本旅遊推薦 | 規劃您的完美日本之旅" />
+    <meta
+      property="og:description"
+      content="提供最專業、客製化的日本旅遊行程規劃。包含北海道雪景、日本美食、溫泉、京都清水寺等熱門景點推薦，助您打造難忘的日本之旅。"
+    />
+    <meta
+      property="og:image"
+      content="https://skorpiong.github.io/Japan-Travel-Agency-Website/public/og-image.png"
+    />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="櫻花與富士山夕陽下的日本傳統街道" />
+    <meta property="og:locale" content="zh_TW" />
+    <meta property="og:site_name" content="日本旅遊推薦" />
 
-            <section class="empty-container">
-                <h3 id="reservation-title">今天就開始規劃行程，找到最適合的方案。</h3>
-                <p id="reservation-description">
-                    無論是家庭旅遊、蜜月旅行或是獨自探險，我們都能為您提供最完美的行程安排。我們的專業團隊將根據您的需求，量身打造獨特的旅遊體驗。
-                </p>
-                <a href="./src/pages/reservation.html"
-                    ><button id="reservation-cta" type="button">立即預約</button></a
-                >
-            </section>
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://skorpiong.github.io/Japan-Travel-Agency-Website/" />
+    <meta name="twitter:title" content="日本旅遊推薦 | 規劃您的完美日本之旅" />
+    <meta
+      name="twitter:description"
+      content="提供最專業、客製化的日本旅遊行程規劃。包含北海道雪景、日本美食、溫泉、京都清水寺等熱門景點推薦，助您打造難忘的日本之旅。"
+    />
+    <meta
+      name="twitter:image"
+      content="https://skorpiong.github.io/Japan-Travel-Agency-Website/public/twitter-image.png"
+    />
+    <meta name="twitter:image:alt" content="櫻花與富士山夕陽下的日本傳統街道" />
 
-            <section class="google-map">
-                <h3>日本地理位置</h3>
-                <p>
-                    日本在地理上屬於東北亞，東鄰太平洋，西以日本海、朝鮮海峽、東海與歐亞大陸的西伯利亞、朝鮮半島、中國大陸鄰接，南以菲律賓海與台灣、馬里亞納群島鄰接，北以宗谷海峽、鄂霍次克海與庫頁島、千島群島鄰接。日本一年四季都是舒爽怡人的氣候，四季變化分明。
-                    南部暖和，越往北部越寒冷。 特別是冬天吹西北季風，在日本海側會下很多雪。
-                    另一方面、在太平洋側會持續是被稱為「冬晴」的乾燥晴天。
-                </p>
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27826637.27868789!2d115.72770700395263!3d31.6391532531029!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34674e0fd77f192f%3A0xf54275d47c665244!2z5pel5pys!5e0!3m2!1szh-TW!2sus!4v1724110146761!5m2!1szh-TW!2sus"
-                    style="border: 0"
-                    allowfullscreen=""
-                    loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"
-                ></iframe>
-            </section>
-        </main>
-        <site-footer root="./"></site-footer>
-        <script src="./src/script.js" defer></script>
-    </body>
+    <!-- Favicons and App Icons -->
+    <link rel="icon" href="./public/favicon.ico" sizes="32x32" />
+    <link rel="icon" href="./public/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="./public/apple-touch-icon.png" />
+    <link rel="manifest" href="./public/site.webmanifest" />
+
+    <title>日本旅遊推薦 | 規劃您的完美日本之旅</title>
+
+    <!-- Stylesheets & Scripts -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./src/styles/style.css" />
+    <script type="module" src="./src/metadata-sync.js"></script>
+    <script type="module" src="./src/components/site-header.js"></script>
+    <script type="module" src="./src/components/site-footer.js"></script>
+  </head>
+
+  <body>
+    <site-header active="index" root="./"></site-header>
+    <main>
+      <section class="background-image">
+        <div class="filter">
+          <h3>休閒空間，特殊假期。<br />安排一趟日本旅遊行程，放鬆身心。</h3>
+        </div>
+      </section>
+      <section class="info-circles">
+        <h3>遊玩主題</h3>
+        <div class="circles">
+          <div class="circle">
+            <img title="北海道雪景" src="./public/assets/北海道雪景.jpg" alt="北海道雪景" />
+            <p>北海道雪景，美不勝收</p>
+          </div>
+          <div class="circle">
+            <img title="日本道地壽司" src="./public/assets/日本壽司.jpg" alt="日本壽司" />
+            <p>日本道地壽司與美食</p>
+          </div>
+          <div class="circle">
+            <img title="富士山風景" src="./public/assets/富士山.jpg" alt="富士山" />
+            <p>富士山風景與溫泉</p>
+          </div>
+          <div class="circle">
+            <img title="京都清水寺" src="./public/assets/清水寺.jpg" alt="清水寺" />
+            <p>京都清水寺，千年古都</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="empty-container">
+        <h3 id="reservation-title">今天就開始規劃行程，找到最適合的方案。</h3>
+        <p id="reservation-description">
+          無論是家庭旅遊、蜜月旅行或是獨自探險，我們都能為您提供最完美的行程安排。我們的專業團隊將根據您的需求，量身打造獨特的旅遊體驗。
+        </p>
+        <a href="./src/pages/reservation.html"
+          ><button id="reservation-cta" type="button">立即預約</button></a
+        >
+      </section>
+
+      <section class="google-map">
+        <h3>日本地理位置</h3>
+        <p>
+          日本在地理上屬於東北亞，東鄰太平洋，西以日本海、朝鮮海峽、東海與歐亞大陸的西伯利亞、朝鮮半島、中國大陸鄰接，南以菲律賓海與台灣、馬里亞納群島鄰接，北以宗谷海峽、鄂霍次克海與庫頁島、千島群島鄰接。日本一年四季都是舒爽怡人的氣候，四季變化分明。
+          南部暖和，越往北部越寒冷。 特別是冬天吹西北季風，在日本海側會下很多雪。
+          另一方面、在太平洋側會持續是被稱為「冬晴」的乾燥晴天。
+        </p>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27826637.27868789!2d115.72770700395263!3d31.6391532531029!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34674e0fd77f192f%3A0xf54275d47c665244!2z5pel5pys!5e0!3m2!1szh-TW!2sus!4v1724110146761!5m2!1szh-TW!2sus"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </section>
+    </main>
+    <site-footer root="./"></site-footer>
+    <script type="module" src="./src/script.js"></script>
+  </body>
 </html>

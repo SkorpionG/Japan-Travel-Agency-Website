@@ -1,10 +1,9 @@
 {
     "name": "japan-travel-agency-website",
     "version": "1.0.0",
-    "description": "",
-    "main": "index.js",
+    "description": "An imaginary travel agency for Japan-related travel itineraries",
+    "private": true,
     "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1",
         "format": "prettier --write .",
         "format:check": "prettier --check .",
         "lint": "eslint src/**/*.js",
@@ -17,8 +16,7 @@
         "url": "git+https://github.com/SkorpionG/Japan-Travel-Agency-Website.git"
     },
     "keywords": [],
-    "author": "",
-    "license": "ISC",
+    "author": "SkorpionG",
     "type": "commonjs",
     "bugs": {
         "url": "https://github.com/SkorpionG/Japan-Travel-Agency-Website/issues"
@@ -26,11 +24,11 @@
     "homepage": "https://github.com/SkorpionG/Japan-Travel-Agency-Website#readme",
     "devDependencies": {
         "@eslint/js": "^10.0.1",
-        "eslint": "^10.6.0",
+        "eslint": "^10.15.0",
         "eslint-config-prettier": "^10.1.8",
-        "globals": "^17.7.0",
+        "globals": "^17.14.0",
         "husky": "^9.1.7",
-        "lint-staged": "^17.0.8",
-        "prettier": "^3.8.5"
+        "lint-staged": "^17.6.1",
+        "prettier": "^3.10.1"
     }
 }

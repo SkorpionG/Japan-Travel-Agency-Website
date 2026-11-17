@@ -3,6 +3,7 @@
         "ms-vscode.live-server",
         "ritwickdey.liveserver",
         "glenn2223.live-sass",
-        "esbenp.prettier-vscode"
+        "esbenp.prettier-vscode",
+        "EditorConfig.EditorConfig"
     ]
 }

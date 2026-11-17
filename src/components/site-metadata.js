@@ -1,15 +1,45 @@
 class SiteMetadata extends HTMLElement {
+    #hasInjected = false;
+
     connectedCallback() {
+        if (this.#hasInjected) return;
+        this.#hasInjected = true;
+
         const title = this.getAttribute('title') || '日本旅遊推薦';
         const description = this.getAttribute('description') || '';
         const keywords = this.getAttribute('keywords') || '';
-        const url =
-            this.getAttribute('url') || 'https://skorpiong.github.io/Japan-Travel-Agency-Website/';
         const root = this.getAttribute('root') || './';
-        const ogImage =
-            'https://skorpiong.github.io/Japan-Travel-Agency-Website/public/assets/og-image.png';
-        const twitterImage =
-            'https://skorpiong.github.io/Japan-Travel-Agency-Website/public/assets/twitter-image.png';
+
+        const resolveUrl = (path) => {
+            try {
+                return new URL(path, window.location.href).href;
+            } catch {
+                return path;
+            }
+        };
+
+        const currentCanonicalUrl =
+            typeof window !== 'undefined' &&
+            window.location.origin &&
+            window.location.origin !== 'null'
+                ? `${window.location.origin}${window.location.pathname}`
+                : typeof window !== 'undefined'
+                  ? window.location.href.split(/[?#]/)[0]
+                  : '';
+
+        const rawUrl = this.getAttribute('url');
+        const url = rawUrl ? resolveUrl(rawUrl) : currentCanonicalUrl;
+
+        const rawOgImage = this.getAttribute('og-image');
+        const ogImage = rawOgImage
+            ? resolveUrl(rawOgImage)
+            : resolveUrl(`${root}public/assets/og-image.png`);
+
+        const rawTwitterImage = this.getAttribute('twitter-image');
+        const twitterImage = rawTwitterImage
+            ? resolveUrl(rawTwitterImage)
+            : resolveUrl(`${root}public/assets/twitter-image.png`);
+
         const favicon = `${root}public/favicon.svg`;
 
         const html = `
